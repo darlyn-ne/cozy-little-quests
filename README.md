@@ -41,4 +41,3 @@ The project focuses on DOM manipulation, event handling, data persistence and re
 * Add categories or tags
 * Add additional customization options
 * Improve accessibility
-# cozy-little-quests
