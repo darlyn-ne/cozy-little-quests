@@ -1,0 +1,254 @@
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-size: 9px;
+  text-align: center;
+  color: #a9928f;
+}
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 14px;
+  background-image: url('../images/todo-bg.jpg');
+  margin: 0;
+  padding: 40px 40px;
+}
+
+.todo-container,
+.timer-container,
+.radio-container {
+  max-width: 700px;
+  margin: 30px auto 0 auto;
+  background-color: #F5DBC2;
+  padding: 30px;
+  border-radius: 12px;
+  border: 3px solid #F89E95;
+  box-shadow: 5px 5px 0 #F89E95;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 32px;
+  color: #855d5b;
+  text-align: center;
+  line-height: 1.2;
+
+}
+
+.todo-grid {
+  display: grid;
+  grid-template-columns: 1fr 160px 90px 80px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: stretch;
+  color: #855d5b;
+}
+
+.todo-input-grid {
+  display: grid;
+  grid-template-columns: 1fr 160px 180px;
+  column-gap: 10px;
+  align-items: stretch;
+  margin-bottom: 20px;
+}
+
+
+.todo-date {
+  color: #a9928f;
+  font-size: 11px;
+}
+
+
+.name-input,
+.date-input {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 9px;
+  padding: 10px;
+  border: 2px solid #855d5b;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #827b74;
+  background-color: #fdf4e2;
+  align-items: stretch;
+}
+
+.add-todo-button,
+.reset-button {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 9px;
+  background-color: #9f918a;
+  color: #fdf4e2;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.delete-todo-button {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 9px;
+  background-color: #bb5e5e;
+  color: #fdf4e2;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.complete-todo-button {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 9px;
+  background-color: #72a696;
+  color: #fdf4e2;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+button:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px 0 #F89E95;
+}
+
+/*---timer section---*/
+
+.timer {
+  text-align: center;
+  color: #855d5b;
+}
+
+.timer-value {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.duration-button {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 9px;
+  background-color: #9f918a;
+  color: #fdf4e2;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  cursor: pointer;
+  width: 100px;
+  margin: 5px;
+}
+
+.stop-button {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 9px;
+  background-color: #bb5e5e;
+  color: #fdf4e2;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  cursor: pointer;
+  width: 100px;
+  margin: 5px;
+}
+
+.start-button {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 9px;
+  background-color: #72a696;
+  color: #fdf4e2;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  cursor: pointer;
+  width: 100px;
+  margin: 5px;
+}
+
+/*---radio section---*/
+
+.radio {
+  text-align: center;
+}
+
+.radio-pause-button {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 11px;
+  background-color: #9f918a;
+  color: #fdf4e2;
+  border: none;
+  border-radius: 6px;
+  padding: 6px;
+  cursor: pointer;
+  width: 50px;
+  margin: 5px;
+}
+
+.radio-stop-button {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 11x;
+  background-color: #bb5e5e;
+  color: #fdf4e2;
+  border: none;
+  border-radius: 6px;
+  padding: 6px;
+  cursor: pointer;
+  width: 50px;
+  margin: 5px;
+}
+
+.radio-play-button {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 11px;
+  background-color: #72a696;
+  color: #fdf4e2;
+  border: none;
+  border-radius: 6px;
+  padding: 6px;
+  cursor: pointer;
+  width: 50px;
+  margin: 5px;
+}
+
+/*---Responsive design for smaller screens---*/
+
+@media (max-width: 755px) {
+
+  body {
+    padding: auto 20px;
+  }
+
+  .todo-container {
+    padding: 30px;
+  }
+
+  .todo-input-grid {
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+  }
+
+  .todo-grid {
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+  }
+
+  .add-todo-button,
+  .complete-todo-button,
+  .delete-todo-button,
+  .start-button,
+  .stop-button,
+  .reset-button {
+    width: 100%;
+  }
+}

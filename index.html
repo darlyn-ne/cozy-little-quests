@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/11-todo-list.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <title>Cozy Little Quests</title>
+</head>
+
+<body>
+
+  <main class="todo-container">
+
+    <h1>Cozy Little Quests</h1>
+
+    <div class="todo-input-grid">
+      <input placeholder="What will you do?" class="js-name-input name-input">
+
+      <input type="date" class="js-date-input date-input">
+
+      <button onclick="addTodo();" class="add-todo-button">
+        Add
+      </button>
+    </div>
+
+    <div class="js-todo-list todo-grid"></div>
+
+  </main>
+
+  <div class="timer-container">
+
+    <div class="timer">
+
+      <h1>Focus Timer</h1>
+
+      <div class="timer-duration-buttons">
+        <button onclick="setTimer(5);" class="duration-button">5 min</button>
+        <button onclick="setTimer(10);" class="duration-button">10 min</button>
+        <button onclick="setTimer(30);" class="duration-button">30 min</button>
+        <button onclick="setTimer(50);" class="duration-button">50 min</button>
+      </div>
+
+      <div class="js-timer-value timer-value">00:00:00</div>
+
+      <div class="timer-buttons">
+
+        <button onclick="startTimer();" class="start-button">Start</button>
+
+        <button onclick="stopTimer();" class="stop-button">Stop</button>
+
+        <!--<button onclick="resetTimer();" class="reset-button">Reset</button>-->
+
+      </div>
+    </div>
+  </div>
+
+  <div class="radio-container">
+    <h1>Lo-Fi Radio</h1>
+    <p>♪ Cozy Study Mix by Lukrembo ♪</p>
+
+    <div class="radio">
+
+      <button onclick="playRadio();" class="radio-play-button">&#9658;</button>
+      <button onclick="pauseRadio();" class="radio-pause-button">&#10074;&#10074;</button>
+      <button onclick="stopRadio();" class="radio-stop-button">&#9724;</button>
+
+    </div>
+
+    <audio class="js-radio-sound" src="sounds/radio-audio.mp3"></audio>
+
+    <audio class="js-timer-sound" src="sounds/timer-up-notif.mp3"></audio>
+
+    <script src="scripts/11-todo-list.js"></script>
+</body>
+
+</html>
