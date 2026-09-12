@@ -26,11 +26,8 @@ A cozy and responsive to-do list web app designed to turn everyday tasks into sm
 
 ### Mobile
 
-![Cozy Little Quests - Mobile]
-<p float="left">
-  <img src="/screenshots/mobile-version-01.png" width="100" />
-  <img src="/screenshots/mobile-version-02.png" width="100" /> 
-</p>
+![Cozy Little Quests - Mobile 01](screenshots/mobile-version-01.png)
+![Cozy Little Quests - Mobile 02](screenshots/mobile-version-02.png)
 
 ## About the Project
 
