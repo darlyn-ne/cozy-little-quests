@@ -71,7 +71,7 @@ function addTodo() {
 
 
 let timer;
-let timeLeft = 5; // 30 minutes in seconds
+let timeLeft = 30 * 60; // 30 minutes in seconds
 
 const timerSound = document.querySelector('.js-timer-sound');
 
